@@ -24,11 +24,6 @@ export const ComponentExample: React.FC = () => {
   });
   console.log(dataAfter3);
 
-  const { data: dataAfter4 } = useSWR("4", fetchWithDelay, {
-    suspense: true,
-  });
-  console.log(dataAfter4);
-
   return (
     <main>
       <p>Page loaded!</p>
